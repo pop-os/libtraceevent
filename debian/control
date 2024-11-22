@@ -11,7 +11,7 @@ Vcs-Git: https://salsa.debian.org/sudip/libtraceevent.git
 
 Package: libtraceevent-dev
 Section: libdevel
-Architecture: linux-any
+Architecture: amd64 arm64
 Multi-Arch: same
 Depends: libtraceevent1 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Description: Linux kernel trace event library (development files)
@@ -21,7 +21,7 @@ Description: Linux kernel trace event library (development files)
  This package is needed to compile programs against libtraceevent1.
 
 Package: libtraceevent1
-Architecture: linux-any
+Architecture: amd64 arm64
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Linux kernel trace event library (shared library)
@@ -31,7 +31,7 @@ Description: Linux kernel trace event library (shared library)
  This package contains the shared library.
 
 Package: libtraceevent1-plugin
-Architecture: linux-any
+Architecture: amd64 arm64
 Depends: ${shlibs:Depends}, ${misc:Depends}, libtraceevent1 (= ${binary:Version})
 Multi-Arch: same
 Description: Linux kernel trace event library (plugins)
