@@ -1,3 +1,9 @@
+libtraceevent (1:1.8.2-1pop1) jammy; urgency=medium
+
+  * Backport to Jammy from Noble
+
+ -- Michael Aaron Murphy <michael@mmurphy.dev>  Fri, 22 Nov 2024 16:29:31 +0100
+
 libtraceevent (1:1.8.2-1ubuntu2) noble; urgency=medium
 
   * No-change rebuild for CVE-2024-3094
