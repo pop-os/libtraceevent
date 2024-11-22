@@ -1,0 +1,9 @@
+Tests: build-examples.sh
+Depends: @, @builddeps@
+Restrictions: superficial
+
+# We want to build the tests using the shared library, not the static library.
+# Hence, unset LIBTRACEEVENT_STATIC, and add -ltraceevent to LIBS.
+Test-Command: LIBTRACEEVENT_STATIC= LIBS=-ltraceevent make test && ./utest/trace-utest
+Features: test-name=trace-utest
+Depends: @, @builddeps@
